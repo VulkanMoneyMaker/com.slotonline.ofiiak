@@ -62,15 +62,17 @@ public class Titles_Items extends CCLayer
 	public void createButton(){
 		String [] str = {"Buttons/dragons","Buttons/pirates","Buttons/jewels","Buttons/fruit","Buttons/cash","Buttons/dragons"};
 		Button_Grow selectBtn;
-		for(int i = 0 ; i < 1 ; i++){
-			selectBtn = Button_Grow.button(My_R._getImg(str[i]), My_R._getImg(str[i]),this,"startGame",(i+1));
-//			float fx =  My_R._getX(170) + My_R._getX(307) * (i % 3);
-//			float fy = My_R._getY(440) - My_R._getY(228) * (i / 3);
-			float fx = 900;
-			float fy = 350;
-			selectBtn.setAnchorPoint(0, 0);
-			selectBtn.setPosition(fx, fy);
-			addChild(selectBtn);
+		for(int i = 0 ; i < 6 ; i++){
+
+			if (i == 5) {
+				selectBtn = Button_Grow.button(My_R._getImg(str[i]), My_R._getImg(str[i]),this,"startGame",(i+1));
+				float fx = 900;
+				float fy = 350;
+				selectBtn.setAnchorPoint(0, 0);
+				selectBtn.setPosition(fx, fy);
+				addChild(selectBtn);
+			}
+
 		}
 		
 		CCSprite img_txt = CCSprite.sprite(My_R._getImg("Buttons/text_box"));
