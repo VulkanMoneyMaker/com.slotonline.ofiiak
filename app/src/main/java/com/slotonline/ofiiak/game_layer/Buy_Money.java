@@ -66,15 +66,15 @@ public class Buy_Money extends CCLayer {
 
 //		admobInterstitial();
 		
-		Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(My_R.g_Context.getResources().getString(R.string.more_apps_hammyliem)));
-		My_R.g_Context.startActivity(i);
-
-		long currentTime = System.currentTimeMillis();
-		if ((currentTime - lastTime) > 15 * 60 * 1000) {
-			My_R.allCoin += 1000;
-			My_R.saveSetting();
-			lastTime = currentTime;
-		}
+//		Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(My_R.g_Context.getResources().getString(R.string.more_apps_hammyliem)));
+//		My_R.g_Context.startActivity(i);
+//
+//		long currentTime = System.currentTimeMillis();
+//		if ((currentTime - lastTime) > 15 * 60 * 1000) {
+//			My_R.allCoin += 1000;
+//			My_R.saveSetting();
+//			lastTime = currentTime;
+		
 
 	}
 	
